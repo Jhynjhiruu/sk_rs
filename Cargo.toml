@@ -1,0 +1,15 @@
+[package]
+name = "sk_rs"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = 'fat'
+opt-level = 's'
+
+[dependencies]
+#n64 = { path = "../../rust/n64", features = ["sk", "sk_vi"] }
+n64 = { git = "https://github.com/Jhynjhiruu/n64-rs.git", features = [
+    "sk",
+    "sk_vi",
+] }

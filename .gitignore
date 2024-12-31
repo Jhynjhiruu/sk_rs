@@ -1,0 +1,7 @@
+/target
+/disasm
+*.z64
+*.aes
+*.bak
+
+Keysfile
